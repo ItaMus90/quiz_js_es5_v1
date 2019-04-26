@@ -1,0 +1,104 @@
+{
+    "questions": [
+        {
+            "question_id": "0",
+            "question": "Is there any difference between window and document?",
+            "answers":  [
+                {
+                    "answer_id": "0",
+                    "answer": "Yes"
+                },
+                {
+                    "answer_id":"1",
+                    "answer":"No"
+                }
+            ],
+            "correct": "0",
+            "explain": "Yes. JavaScript has a global object and everything runs under it. window is that global object that holds global variables, global functions, location, history everything is under it. Besides, setTimeout, ajax call (XMLHttpRequest), console or localStorage are part of window."
+        },
+        {
+            "question_id": "1",
+            "question": "Which of the following variables cannot be changed?",
+            "answers":  [
+                {
+                    "answer_id": "0",
+                    "answer": "var"
+                },
+                {
+                    "answer_id":"1",
+                    "answer":"let"
+                },
+                {
+                    "answer_id":"2",
+                    "answer":"const"
+                }
+            ],
+            "correct": "2", 
+            "explain": "Constants are block-scoped, much like variables defined using the let statement. The value of a constant cannot change through reassignment, and it can't be redeclared."
+        },
+        {
+            "question_id": "2",
+            "question": "Does document.onload and window.onload fire at the same time?",
+            "answers":  [
+                {
+                    "answer_id": "0",
+                    "answer": "Yes"
+                },
+                {
+                    "answer_id":"1",
+                    "answer":"No"
+                }
+            ],
+            "correct": "0",
+            "explain": "window.onload is fired when DOM is ready and all the contents including images, css, scripts, sub-frames, etc. finished loaded. This means everything is loaded. document.onload is fired when DOM (DOM tree built from markup code within the document)is ready which can be prior to images and other external content is loaded Think about the differences between window and document, this would be easier for you."
+        },
+        {
+            "question_id": "3",
+            "question": "Is there any difference between window and document?",
+            "answers":  [
+                {
+                    "answer_id": "0",
+                    "answer": "Yes"
+                },
+                {
+                    "answer_id":"1",
+                    "answer":"No"
+                }
+            ],
+            "correct": "0",
+            "explain": "Yes. JavaScript has a global object and everything runs under it. window is that global object that holds global variables, global functions, location, history everything is under it. Besides, setTimeout, ajax call (XMLHttpRequest), console or localStorage are part of window."
+        },
+        {
+            "question_id": "4",
+            "question": "Is attribute similar to property?",
+            "answers":  [
+                {
+                    "answer_id": "0",
+                    "answer": "Yes"
+                },
+                {
+                    "answer_id":"1",
+                    "answer":"No"
+                }
+            ],
+            "correct": "1",
+            "explain": "attributes are just like attribute in your html tag (XML style attribute) inside the starting tag. html attributes are exposed to the DOM via property. Hence, a property is created when DOM is parsed for each attribute in the html tag. If you change an attribute only the value of the property will change. However, the value of attribute will remain same."
+        },
+        {
+            "question_id": "5",
+            "question": "How come, I can't use forEach or similar array methods on a NodeList?",
+            "answers":  [
+                {
+                    "answer_id": "0",
+                    "answer": "Yes"
+                },
+                {
+                    "answer_id":"1",
+                    "answer":"No"
+                }
+            ],
+            "correct": "0",
+            "explain": "Yeah. Both array and nodeList have length and you can loop through elements but they are not same object."
+        }
+    ]
+}
